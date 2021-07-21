@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>Checkout</title>
+      <!-- Facebook Pixel Code -->
+      <script>
+         !function(f,b,e,v,n,t,s)
+         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+         if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+         n.queue=[];t=b.createElement(e);t.async=!0;
+         t.src=v;s=b.getElementsByTagName(e)[0];
+         s.parentNode.insertBefore(t,s)}(window, document,'script',
+         'https://connect.facebook.net/en_US/fbevents.js');
+         fbq('init', '605887806980926');
+         fbq('init', '293378058439909');
+         fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=605887806980926&ev=PageView&noscript=1"
+         /></noscript>
+      <!-- End Facebook Pixel Code -->
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114223775-5"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-114223775-5');
+      </script>
+      <!-- Hotjar Tracking Code for http://el-accessories.com/ -->
+      <script>
+         (function(h,o,t,j,a,r){
+             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+             h._hjSettings={hjid:1928831,hjsv:6};
+             a=o.getElementsByTagName('head')[0];
+             r=o.createElement('script');r.async=1;
+             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+             a.appendChild(r);
+         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+      </script>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css"> 
+   </head>
+   <body style="width: 100%; margin: 0px;">
+      <p class="offer2 top-offer">Due to high demand, soon we will run out of stock!<br>No worry, your order is reserved for <span class="minutescount">0</span><span id="ten-countdown"></span> <span class="minutescount">minutes!</span></p>
+      <div class="sadrzaj">
+         <h2 style="margin-top: 25px;">YOUR ORDER</h2>
+         <span class="conditions-sub" style="padding-bottom: 15px;"><a href="payment-2.html" style="color:#238fcd; font-size:16px;">Order 2 sets for $59 + Free Shipping</a></span>
+         <hr style="opacity:0.2; margin-top: 0px;">
+         <div>
+            <img class="conditions-img2" src="images/product-2.jpg" alt="" />
+            <div class="conditions-text2" style="padding-top: 10px;">
+               <p class="nabrijavanje"> <span class="bold deal">Great Deal</span></p>
+               <p class="conditions bold">HANDAIYAN Eyeliner 12Pcs/Set</p>
+               <span class="conditions-sub">Quantity: <span style="color:#000;">1</span></span><br>
+               <span class="conditions-sub" style="padding-bottom: 15px;"><a href="card.html" style="color:#238fcd">Edit quantity</a></span>
+            </div>
+            <div class="conditions-text3">
+               <p class="conditions bold"><span style="text-decoration: line-through; color: #8a8a8a; font-weight: 400;">$99</span><br>$39</p>
+            </div>
+         </div>
+         <hr style="opacity:0.2; width: 100%; margin-top: 25px;">
+         <div>
+            <img class="conditions-img2" src="images/elements/express.jpg" alt="" />
+            <div class="conditions-text2">
+               <p class="conditions bold">Shipping</p>
+               <p class="nabrijavanje"> <span class="bold" style="color:#68c43d;"><img style="width:7%" src="images/elements/checkk.png" alt="" />Tracking Available</span></p>
+            </div>
+            <div class="conditions-text3">
+               <p class="conditions bold">$3.90</p>
+            </div>
+         </div>
+         <hr style="opacity:0.2; width: 100%; margin-top: 25px;">
+         <div>
+            <div class="conditions-text5">
+               <p class="conditions bold">Total:</p>
+            </div>
+         </div>
+         <div>
+            <div class="conditions-text4">
+               <p class="conditions bold">$42.90</p>
+            </div>
+         </div>
+         <hr style="opacity:0; width: 100%; margin-top: 25px;">
+         <p class="offer" style="padding-top: 0px;"><b>SELECT PAYMENT METHOD</b></p>
+         <p class="offer" style="padding-top: 0px;">Pay with PayPal, Debit or Credit Card - Easy and Secure</p>
+         <div id="smart-button-container">
+            <div style="text-align: center;">
+               <div id="paypal-button-container"></div>
+            </div>
+         </div>
+         <script src="https://www.paypal.com/sdk/js?client-id=AVCWeZwL6vHcYl6yTS3c0uoAEW12paAMdrC1P325yNXs8mF9kGtrOtwUH9aa_x0q3HB3KGZ9IsLLz4Qc&currency=USD" data-sdk-integration-source="button-factory"></script>
+         <script>
+            function initPayPalButton() {
+              paypal.Buttons({
+                style: {
+                  shape: 'rect',
+                  color: 'gold',
+                  layout: 'vertical',
+                  label: 'buynow',
+                  
+                },
+            
+                createOrder: function(data, actions) {
+                  return actions.order.create({
+                    purchase_units: [{"description":"HANDAIYAN Eyeliner 12Pcs/Set","amount":{"currency_code":"USD","value":42.90,"breakdown":{"item_total":{"currency_code":"USD","value":39},"shipping":{"currency_code":"USD","value":3.90},"tax_total":{"currency_code":"USD","value":0}}}}]
+                  });
+                },
+            
+                onApprove: function(data, actions) {
+                  return actions.order.capture().then(function(details) {
+                    location.replace("https://el-accessories.com/us-eyeliner/typ-1.html");
+                  });
+                },
+            
+                onError: function(err) {
+                  console.log(err);
+                }
+              }).render('#paypal-button-container');
+            }
+            initPayPalButton();
+         </script>
+         <div class="box"><img src="images/elements/safe-checkout_784x.png" id="TrustBadges"/></div>
+         <div>
+            <img class="conditions-img" src="images/elements/shield.png" alt="" />
+            <div class="conditions-text">
+               <p class="conditions bold">90 Days Money Back Guarantee</p>
+               <span class="conditions-sub">Buyer Protection</span>
+            </div>
+         </div>
+         <div>
+            <img class="conditions-img" src="images/elements/box.png" alt="" />
+            <div class="conditions-text">
+               <p class="conditions bold">Return For Any Reason Within 15 Days</p>
+               <span class="conditions-sub">Free Return</span>
+            </div>
+         </div>
+         <hr style="opacity:0; margin-top: 25px;">
+      </div>
+      <script src="contdown.js"></script>
+   </body>
+</html>
